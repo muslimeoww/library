@@ -40,10 +40,11 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    width: 1440px;
+    
     margin: 0 auto;
 }
 
@@ -76,6 +77,17 @@ ul {
 .conteiner {
     max-width: 1400px;
     margin: 0 auto;
+}
+
+.conteiner_pepe {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #0C0C0E;
 }
 
 .header_block {
@@ -136,22 +148,28 @@ ul {
     height: 90px;
 }
 
-.user {
+.user:hover {
     border: none;
     background-color: transparent;
     padding: 0;
     cursor: pointer;
+    filter: drop-shadow(0px 0px 10px #ee900c);
+
+}
+
+.user {
+    transition: 0.3s;
 }
 
 .Welcome {
     box-sizing: border-box;
     flex-shrink: 0;
     background-image: url(./img/Welcome.png);
-    width: 1440px;
     height: 600px;
     background-position: center;
     background-size: cover;
-
+    margin: 0 auto;
+    width: 100%;
 }
 
 .block_h_2 {
@@ -309,28 +327,38 @@ ul {
     margin-top: 40px;
 }
 
-.label_season_one {
-    color: #000;
-    font-family: 'Inter';
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-right: 85px;
+
+.lovers_buttons {
+  accent-color: black;
+  width: 17px;
+  height: 17px;
+}
+
+.lovers_buttons:checked~.text_big_owo {
+  color: #000;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .label_season {
+    cursor: pointer;
+    padding: 10px 0;
     color: #000;
     font-family: 'Inter';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-right: 83px;
+    margin-right: 81px;
 }
 
 .lovers_buttons {
-    margin-right: 20px;
+    margin-right: 18px;
+    width: 17px;
+    height: 17px;
 }
 
 .books_for_my_life {
@@ -459,6 +487,10 @@ h3 {
     border-radius: 2px;
     border: 1px solid #BB945F;
     background: #BB945F;
+}
+
+.buy {
+    transition: 0.3s;
 }
 
 .Own_one {
@@ -854,6 +886,9 @@ h3 {
     background: #BB945F;
 }
 
+.singup {
+    transition: 0.3s;
+}
 
 
 .login {
@@ -1009,6 +1044,7 @@ h3 {
     border-radius: 2px;
     border: 1px solid #0C0C0E;
     background-color: #FFF;
+    cursor: pointer;
 }
 
 .Library-card {
@@ -1122,9 +1158,23 @@ h3 {
 }
 
 .bigboysme:hover {
-    text-shadow: 1px 1px 2px #ff0766, 0 0 1em rgb(255, 104, 155), 0 0 0.2em rgb(195, 0, 255);
+    text-shadow: 1px 1px 2px #ffc400, 0 0 1em rgb(65, 50, 55), 0 0 0.2em rgb(255, 123, 0);
+}
+.bigboysme {
+    transition: 0.3s;
 }
 
 .bigboysme {
     cursor: pointer;
+}
+
+.display-noneee {
+    display: none;
+}
+
+.lww_li:hover {
+    filter: drop-shadow(0px 0px 10px #ee900c);
+}
+.lww_li {
+    transition: 0.3s;
 }
