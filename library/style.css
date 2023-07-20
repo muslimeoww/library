@@ -783,6 +783,8 @@ h3 {
 
 .Contacts {
     position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .a_a {
