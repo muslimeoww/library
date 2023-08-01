@@ -1050,6 +1050,13 @@ h3 {
     border: 1px solid #0C0C0E;
     background-color: #FFF;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.check_form:hover{
+    border-radius: 2px;
+    border: 1px solid #BB945F;
+    background: #BB945F;
 }
 
 .Library-card {
