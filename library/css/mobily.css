@@ -149,7 +149,7 @@ max-width: 728px;
 }
 
 .coffy_coze {
-    width: 101%;
+    width: 100%;
 }
 
 
@@ -160,7 +160,7 @@ max-width: 728px;
 }
 
 .Cakes {
-    margin-left: calc(100vw - 522px);
+    margin-left: 247px;
     margin-top: 42px;
 }
 
@@ -253,4 +253,50 @@ max-width: 728px;
     /* width: calc(100vw - 40px); */
 }
 
+}
+@media screen and (max-width: 740px) {
+    .books_for_my_life {
+        margin-left: 6%;
+        margin-top: 5%;
+    }
+    .coffy_coze {
+        width: 100%;
+    }
+    .Cakes {
+        margin-left: 150px;
+        margin-top: 42px;
+    }
+  }
+
+@media only screen and (max-width: 1439px) and (min-width: 741px)  {
+    .header {
+        width: 100%;
+    }
+    .Welcome {
+        width: 100%;
+    }
+    .footer {
+        width: 100%;
+    }
+    .img_main_three {
+        display: none;
+    }
+    .obz:before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 140px;
+        background-color: #ffffff;
+        width: 100%;
+        height: 1px;
+    }
+    .Staffs_books:nth-child(1), .Staffs_books:nth-child(3) {
+        margin-right: 100px;
+    }
+    .Staffs_books {
+        margin-right: 50px;
+    }
+    .Staffs_books {
+        margin-right: 50px;
+    }
 }
