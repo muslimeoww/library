@@ -1,0 +1,256 @@
+@media screen and (max-width: 1024px) {
+.conteiner {
+max-width: 728px;
+
+}
+
+
+
+/* Header */
+
+.header {
+    width: 100%;
+}
+
+.nav {
+    display: none;
+}
+
+.h_1 {
+    margin-right: 321px;
+}
+
+.header_block {
+    justify-content: start;
+}
+
+.burger {
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.Welcome {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    background-image: url(../img/smallWElcome.png);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+    
+    
+}
+/* About */
+
+.about_h::before {
+    content: '';
+    position: absolute;
+    left: 340px;
+    top: 60px;
+    width: 50px;
+    height: 1px;
+    background-color: #0C0C0E;
+}
+
+.about_description {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+
+.img_main_two {
+    display: none;
+}
+.img_main_three {
+    display: none;
+}
+
+.arrow_one {
+    display: inline-block;
+    margin-top: 47px;
+    /* margin-left: 76px; */
+}
+.arrow_two {
+    display: inline-block;
+    margin-top: 47px;
+    /* margin-right: 76px; */
+}
+.img_main_one {
+    margin: 0px;
+    margin-right: 46px;
+    margin-left: 46px;
+}
+
+.img_main {
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* width: 728px; */
+    margin-bottom: 21px;
+}
+
+.button-fe, .button-fer {
+    display: inline-block;
+}
+
+.button-fe {
+    background-color: #BB945F;
+}
+
+.button_one {
+    background-color: #0C0C0E;
+}
+
+
+/* Favorite */
+
+.fav::before {
+    content: '';
+    position: absolute;
+     left: 340px;
+    top: 62px;
+    width: 50px;
+    height: 1px;
+    background-color: #0C0C0E;
+}
+
+.Staffs_books:nth-child(1),
+.Staffs_books:nth-child(3) {
+    margin-right: 0px;
+}
+
+.books_for_my_life {
+    margin-left: 9%;
+    margin-top: 5%;
+}
+
+.Staffs_books {
+    margin-bottom: 39px;
+}
+.Staffs_books:last-child {
+    margin-bottom: 0px;
+}
+
+
+
+
+/*Coffe Shop */
+
+.Coffe:before {
+    content: '';
+    position: absolute;
+    left: 339px;
+    top: 119px;
+    width: 50px;
+    height: 1px;
+    background-color: #0C0C0E;
+}
+
+.coffy_coze {
+    width: 101%;
+}
+
+
+.Coffee_and_Cakes {
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+.Cakes {
+    margin-left: calc(100vw - 522px);
+    margin-top: 42px;
+}
+
+/* Our Cont */
+
+.Our_Contacts::before {
+    content: '';
+    position: absolute;
+    left: 340px;
+    top: 60px;
+    width: 50px;
+    height: 1px;
+    background-color: #0C0C0E;
+}
+
+.maps {
+    position: absolute;
+    right: 35px;
+    top: 581px;
+}
+
+.Contacts_allll {
+    margin-bottom: 574px
+}
+
+.Digital_Library_Cards::before {
+    content: '';
+    position: absolute;
+    left: 340px;
+    top: 61px;
+    width: 50px;
+    height: 1px;
+    background-color: #0C0C0E;
+}
+
+.bro_ido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Get_a {
+    flex-basis: 600px;
+    text-align: center;
+    width: 456px;
+}
+.Get_reader_card {
+    margin-bottom: 41px;
+    text-align: center;
+    color: #000;
+    font-family: 'Forum';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+.You_will {
+    margin-bottom: 39px;
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+}
+
+.all_for {
+    margin-bottom: 21px;
+}
+.mememes_i {
+    margin-left: 85px;
+}
+
+
+.footer {
+    width: 100%;
+    height: 256px
+}
+
+.obz:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 138px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 1px;
+    /* width: calc(100vw - 40px); */
+}
+
+}

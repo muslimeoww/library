@@ -41,10 +41,12 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
 body {
-    
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
@@ -72,6 +74,10 @@ li {
 ul {
     margin: 0;
     padding: 0;
+}
+
+.burger {
+    display: none;
 }
 
 .conteiner {
@@ -132,7 +138,9 @@ ul {
 }
 
 .h_1 {
+    
     margin: 0;
+    margin-right: 415px;
     color: #ffffff;
     font-family: "Forum";
     font-size: 30px;
@@ -207,6 +215,12 @@ ul {
     margin-top: 20px;
 }
 
+.arrow_one {
+    display: none;
+}
+.arrow_two {
+    display: none;
+}
 .about_h {
     position: relative;
     margin-bottom: 61px;
@@ -263,12 +277,21 @@ ul {
 
 .suck {
     /* margin-right: 10px; */
+    cursor: pointer;
     border-radius: 100%;
     height: 16px;
     width: 16px;
 }
 
+.button-fe {
+    display: none;
+}
+.button-fer {
+    display: none;
+}
+
 .pre {
+    cursor: pointer;
     width: 26px;
     height: 26px;
     padding: 5px;
@@ -358,6 +381,10 @@ ul {
     margin-right: 81px;
 }
 
+.label_season:last-child {
+    margin-right: 0px;
+}
+
 .lovers_buttons {
     margin-right: 18px;
     width: 17px;
@@ -369,7 +396,7 @@ ul {
     align-content: space-between;
     margin-top: 40px;
     flex-wrap: wrap;
-    height: 1150px;
+    
 }
 
 .Staffs_books {
