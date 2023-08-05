@@ -1217,3 +1217,12 @@ h3 {
 .lww_li {
     transition: 0.3s;
 }
+.hamburger {
+    display: none;
+}
+.burg_butt {
+    display: none;
+}
+.burg_butty {
+    display: none;
+}

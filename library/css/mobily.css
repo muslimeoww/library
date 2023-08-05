@@ -11,11 +11,49 @@ max-width: 728px;
 .header {
     width: 100%;
 }
-
+/* КНОПОЧКИ */
 .nav {
-    display: none;
+   position: absolute;
+   right: 11px;
+   top: 10px;
+   z-index: 2;
+   width: 336px;
+   height: 570px;
+   background-color: #000000;
+   justify-content: center;
 }
 
+.ul {
+    display: block;
+    margin: 100px 0;
+    text-align: center;
+}
+.li_style {
+    margin-bottom: 30px;
+    margin-right: 0px;
+    justify-content: center;
+}
+.a_style {
+    display: block;
+}
+
+.hamburger {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 50px;
+}
+.burg_butt {
+display: block;
+margin-top: 18px;
+margin-right: 21px;
+}
+.burg_butty {
+display: block;
+margin-right: 39px;
+margin-top: 21px;
+}
+/* ВЕРХУ КНОПОЧКИ */
 .h_1 {
     margin-right: 321px;
 }
@@ -252,6 +290,7 @@ max-width: 728px;
     height: 1px;
     /* width: calc(100vw - 40px); */
 }
+
 
 }
 @media screen and (max-width: 740px) {
