@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById("burger").addEventListener("click", function(){
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("burger").addEventListener("click", function () {
         document.querySelector(".header").classList.toggle("open")
     })
 });
-document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById("burg_butt").addEventListener("click", function(){
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("burg_butt").addEventListener("click", function () {
         document.querySelector(".header").classList.toggle("open")
     })
 });
@@ -21,8 +21,8 @@ document.body.addEventListener('click', event => {
     document.querySelector(".header").classList.remove("open")
 });
 
-document.addEventListener("DOMContentLoaded", function(){
-    document.getElementById("nav_men").addEventListener("click", function(){
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("nav_men").addEventListener("click", function () {
         document.querySelector(".header").classList.toggle("open")
     })
 });

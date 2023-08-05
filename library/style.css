@@ -41,7 +41,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
+
 }
 
 
@@ -54,7 +54,7 @@ body {
 
 .Oh_yes_my_daddy {
     width: 100%;
-    
+
 }
 
 button {
@@ -145,7 +145,7 @@ ul {
 }
 
 .h_1 {
-    
+
     margin: 0;
     margin-right: 415px;
     color: #ffffff;
@@ -225,9 +225,11 @@ ul {
 .arrow_one {
     display: none;
 }
+
 .arrow_two {
     display: none;
 }
+
 .about_h {
     position: relative;
     margin-bottom: 61px;
@@ -293,6 +295,7 @@ ul {
 .button-fe {
     display: none;
 }
+
 .button-fer {
     display: none;
 }
@@ -362,18 +365,18 @@ ul {
 
 
 .lovers_buttons {
-  accent-color: black;
-  width: 17px;
-  height: 17px;
+    accent-color: black;
+    width: 17px;
+    height: 17px;
 }
 
 .lovers_buttons:checked~.text_big_owo {
-  color: #000;
-  font-family: 'Inter';
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .label_season {
@@ -403,7 +406,7 @@ ul {
     align-content: space-between;
     margin-top: 40px;
     flex-wrap: wrap;
-    
+
 }
 
 .Staffs_books {
@@ -1087,7 +1090,7 @@ h3 {
     transition: 0.3s;
 }
 
-.check_form:hover{
+.check_form:hover {
     border-radius: 2px;
     border: 1px solid #BB945F;
     background: #BB945F;
@@ -1206,6 +1209,7 @@ h3 {
 .bigboysme:hover {
     text-shadow: 1px 1px 2px #ffc400, 0 0 1em rgb(65, 50, 55), 0 0 0.2em rgb(255, 123, 0);
 }
+
 .bigboysme {
     transition: 0.3s;
 }
@@ -1221,15 +1225,19 @@ h3 {
 .lww_li:hover {
     filter: drop-shadow(0px 0px 10px #ee900c);
 }
+
 .lww_li {
     transition: 0.3s;
 }
+
 .hamburger {
     display: none;
 }
+
 .burg_butt {
     display: none;
 }
+
 .burg_butty {
     display: none;
 }
