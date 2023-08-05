@@ -3,7 +3,11 @@
 max-width: 728px;
 
 }
-
+.Oh_yes_my_daddy{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
 
 
 /* Header */
@@ -11,16 +15,19 @@ max-width: 728px;
 .header {
     width: 100%;
 }
+
 /* КНОПОЧКИ */
 .nav {
-   position: absolute;
-   right: 11px;
-   top: 10px;
-   z-index: 2;
-   width: 336px;
-   height: 570px;
-   background-color: #000000;
-   justify-content: center;
+    position: absolute;
+    right: -326px;
+    top: 10px;
+    z-index: 2;
+    width: 336px;
+    height: 570px;
+    background-color: #000000;
+    justify-content: center;
+    visibility: hidden;
+    transition: transform .5s, visibility .5s;
 }
 
 .ul {
@@ -45,13 +52,39 @@ max-width: 728px;
 }
 .burg_butt {
 display: block;
-margin-top: 18px;
-margin-right: 21px;
+margin-top: 19px;
+margin-right: -148px;
 }
 .burg_butty {
 display: block;
-margin-right: 39px;
-margin-top: 21px;
+margin-right: 37px;
+margin-top: 20px;
+}
+
+.header.open .nav {
+    transform: translateX(-100%);
+    visibility: visible;
+}
+
+.burg_butt:hover {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 5px #ee900c);
+}
+.burg_butt {
+    transition: 0.3s;
+}
+.burg_butty:hover {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 15px #ee900c);
+}
+.burg_butty {
+    transition: 0.3s;
 }
 /* ВЕРХУ КНОПОЧКИ */
 .h_1 {
@@ -65,6 +98,17 @@ margin-top: 21px;
 .burger {
     margin-left: 40px;
     display: inline-block;
+
+}
+.burger:hover {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 15px #ee900c);
+}
+.burger {
+    transition: 0.3s;
 }
 
 .Welcome {
