@@ -44,10 +44,17 @@ html {
     
 }
 
+
 body {
     display: flex;
+    align-items: center;
     flex-direction: column;
     margin: 0 auto;
+}
+
+.Oh_yes_my_daddy {
+    width: 100%;
+    
 }
 
 button {
