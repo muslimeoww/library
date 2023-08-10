@@ -21,7 +21,7 @@
     .nav {
         position: absolute;
         right: -326px;
-        top: 10px;
+        top: 0px;
         z-index: 2;
         width: 336px;
         height: 570px;
@@ -64,14 +64,14 @@
 
     .burg_butt {
         display: block;
-        margin-top: 19px;
+        margin-top: 10px;
         margin-right: -143px;
     }
 
     .burg_butty {
         display: block;
         margin-right: 44px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .header.open .nav {
