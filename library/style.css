@@ -1363,6 +1363,7 @@ h3 {
 
 /* Формочка Логин */
 .login-header-form-gurd {
+    display: none;
     background-color: #FFF;
     width: 250px;
     height: 262px;
@@ -1385,8 +1386,77 @@ font-weight: 400;
 line-height: 20px;
 letter-spacing: 0.4px;
 text-transform: uppercase;
+margin-right: 67px;
 }
 .header-login-top {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 20px;
+
+}
+.close-button {
+    margin-right: -12px;
+    margin-top: -7px;
+}
+.header-email,
+.header-passs {
+color: #000;
+text-align: center;
+font-family: 'Inter';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+letter-spacing: 0.3px;
+
+}
+.header-email-pole,
+.header-email-passs {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 20px;
+    border: 1px solid #BB945F;
+}
+.log_in_form {
+color: #0C0C0E;
+text-align: center;
+font-family: 'Inter';
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+width: 75px;
+height: 30px;
+border-radius: 2px;
+border: 1px solid #0C0C0E;
+padding: 9px 16px;
+margin-top: 10px;
+}
+.login-back-down {
+    display: flex;
+margin-top: 10px;
+}
+.text-for-login-down {
+
+ margin: 0px;
+color: #000;
+font-family: 'Inter';
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.down-login-butt {
+    margin-left: 10px;
+color: #0C0C0E;
+text-align: center;
+font-family: 'Inter';
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1px;
+text-decoration-line: underline;
 }
