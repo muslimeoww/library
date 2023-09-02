@@ -1783,3 +1783,73 @@ margin-right: 101px;
     margin-right: 22px;
     margin-top: 9px;
 }
+/* Нижняя часть bottom menu card  */
+.buy-men-bot {
+    display: flex;
+}
+.buy-men-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.ban-card {
+    color: #000;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+    letter-spacing: 0.3px;
+}
+.cuub-for {
+    width: 200px;
+    height: 20px;
+    border: 1px solid #BB945F;
+}
+
+.cub-for {
+    width: 45px;
+    height: 20px;
+    border: 1px solid #BB945F;
+}
+.cuub-for-thre {
+    width: 45px;
+    height: 20px;
+    border: 1px solid #BB945F;
+}
+
+.cuub-for-four {
+    width: 200px;
+    height: 20px;
+    border: 1px solid #BB945F;
+}
+
+.buy-for-fine {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    width: 75px;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    cursor: pointer;
+}
+.zaberere {
+    display: flex;
+}
+.text-price-bas {
+color: #0C0C0E;
+font-family: 'Inter';
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 100% */
+letter-spacing: 2px;
+text-transform: uppercase;
+}
