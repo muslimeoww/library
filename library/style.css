@@ -1749,6 +1749,7 @@ line-height: 20px; /* 100% */
 }
 /* стартую Buy a library card */
 .buy-a-lib {
+    display: none;
     position: absolute;
     width: 650px;
     height: 540px;
