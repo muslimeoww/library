@@ -1562,3 +1562,92 @@ line-height: normal;
 letter-spacing: 1px;
 text-decoration-line: underline;
 }
+/* Блок мой профиль большой */
+.block-my-profile{
+    display: flex;
+    position: absolute;
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    background-color: #FFF;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+}
+.left-profile {
+width: 170px;
+height: 400px;
+background-color: #0C0C0E;;
+padding-top: 139px;
+padding-left: 25px;
+}
+.block-cub-white {
+width: 80px;
+height: 80px;
+background-color: #FFF;
+margin: 0px 20px;
+margin-bottom: 15px;
+padding-top: 30px;
+padding-bottom: 30px;
+padding-left: 27px;
+padding-right: 27px;
+}
+
+.block-cub-white-small {
+    background-color: #FFF;
+    width: 120px;
+    height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.enezetiale {
+text-align: center;
+color: #000;
+font-family: 'Inter';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+}
+.text-tame-js {
+ color: #BB945F;
+text-align: center;
+font-family: 'Inter';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+}
+/* правая часть */
+.right-profile {
+    width: 430px;
+    
+    background-color: #FFF;
+}
+.my-prof-tex {
+    margin-right: 161px;
+    margin-top: 41px;
+    color: #000;
+    text-align: center;
+    font-family: Forum;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 50% */
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+.my-progile-x {
+    display: flex;
+    justify-content: flex-end;
+}
+.my-prof-x-x {
+    
+    margin-right: 23px;
+    margin-top: 9px;
+
+}
