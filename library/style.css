@@ -1564,6 +1564,7 @@ text-decoration-line: underline;
 }
 /* Блок мой профиль большой */
 .block-my-profile{
+    
     display: flex;
     position: absolute;
     margin: auto;
@@ -1575,6 +1576,7 @@ text-decoration-line: underline;
     right: 0;
     bottom: 0;
     z-index: 5;
+    display: none;
 }
 .left-profile {
 width: 170px;
@@ -1691,3 +1693,57 @@ line-height: 20px; /* 100% */
     text-transform: capitalize;
 }
 /* Загаловок новенький после списка  */
+.zagaloddd {
+color: #0C0C0E;
+font-family: 'Inter';
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 80% */
+margin-left: 20px;
+margin-top: 12px;
+margin-bottom: 30px;
+}
+/* Новый список Rented books */
+
+
+
+.rente-bos {
+margin-left: 51px;
+margin-bottom: 10px;
+list-style: disc;
+color: #000;
+font-family: 'Inter';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+
+/* card number  */
+.card-number-new {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+.card-number-news {
+    color: #0C0C0E;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 100% */
+    margin-left: 20px;
+}
+.card-number-newss {
+color: #BB945F;
+text-align: center;
+font-family: 'Inter';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 100% */
+}
