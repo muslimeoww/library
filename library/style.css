@@ -1747,3 +1747,39 @@ font-style: normal;
 font-weight: 400;
 line-height: 20px; /* 100% */
 }
+/* стартую Buy a library card */
+.buy-a-lib {
+    position: absolute;
+    width: 650px;
+    height: 540px;
+    background-color: #FFF;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.buy-men-top {
+    display: flex;
+    height: 60px;
+    background-color: #0C0C0E;
+    justify-content: flex-end;
+}
+.men-top {
+color: #FFF;
+text-align: center;
+font-family: 'Forum';
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 50% */
+letter-spacing: 0.8px;
+text-transform: uppercase;
+margin-top: 19px;
+margin-right: 101px;
+
+}
+.xrestel-top {
+    margin-right: 22px;
+    margin-top: 9px;
+}
