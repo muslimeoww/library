@@ -1794,7 +1794,7 @@ margin-right: 101px;
 
 .ban-card {
     color: #000;
-    text-align: center;
+    margin-left: 40px;
     font-family: 'Inter';
     font-size: 15px;
     font-style: normal;
@@ -1852,4 +1852,48 @@ font-weight: 700;
 line-height: 20px; /* 100% */
 letter-spacing: 2px;
 text-transform: uppercase;
+margin-top: 20px;
+margin-left: 25px;
+}
+.gomosex {
+    display: flex;
+}
+
+.ban-card-one {
+    margin-top: 30px
+}
+
+.cuub-for,
+.cuub-for-thre,
+.cuub-for-four,
+.buy-for-fine,
+.gomosex {
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pepekekellel {
+    margin-left: 10px;
+}
+.cuub-for-thre {
+    margin-bottom: 20px;
+}
+
+.buy-men-right {
+    display: flex;
+    width: 330px;
+    height: 160px;
+    margin-left: 40px;
+    
+}
+.text-random {
+color: #8E8E8E;
+font-family: 'Inter';
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 133.333% */
+letter-spacing: 2px;
+margin-top: 29px;
 }
