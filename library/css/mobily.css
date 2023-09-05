@@ -1,4 +1,7 @@
 @media screen and (max-width: 1024px) {
+    .prelet {
+        display: block;
+    } 
     .conteiner {
         max-width: 728px;
 

@@ -26,3 +26,33 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".header").classList.toggle("open")
     })
 });
+
+// Слайдер 
+const wraperlel = document.querySelector('.wraper_lele');
+const butonslide = document.querySelectorAll('.suck');
+const prepre = document.querySelectorAll('.pre');
+
+let position = 0;
+let dotindex = 0;
+
+const nextSlide = () => {
+    position += 475
+    sliderLine.style.left = -position + 'px'
+}
+
+const dota = (index) => {
+for (let dot of butonslide) {
+    dot.classList.remove('button_one')
+}
+butonslide[index].classList.add('button_one')
+}
+
+prepre.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        position = 475 * (index - 1);
+        wraperlel.style.left= -position + 'px'
+        dotindex = index;
+        dota(dotindex)
+    })
+})
+

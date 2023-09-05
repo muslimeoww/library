@@ -272,11 +272,29 @@ ul {
 }
 
 .img_main_one {
-    margin-right: 25px;
+    
 }
 
 .img_main_two {
-    margin-right: 25px;
+    
+}
+
+.wraper_wraper {
+    overflow: hidden;
+    width: 1400px;
+}
+
+.wraper_lele {
+    position: relative;
+    display: flex;
+    gap: 25px;
+    transition: 0.5s ;
+    
+
+}
+
+.prelet {
+    display: none;
 }
 
 .buttons {
@@ -284,13 +302,7 @@ ul {
     justify-content: center;
 }
 
-.suck {
-    /* margin-right: 10px; */
-    cursor: pointer;
-    border-radius: 100%;
-    height: 16px;
-    width: 16px;
-}
+
 
 .button-fe {
     display: none;
@@ -306,17 +318,18 @@ ul {
     height: 26px;
     padding: 5px;
 }
+.suck {
+    /* margin-right: 10px; */
+    cursor: pointer;
+    border-radius: 100%;
+    height: 16px;
+    width: 16px;
+    background-color: #0C0C0E;
+}
 
-.button_one {
+.suck.button_one { 
     background-color: #BB945F;
-}
-
-.button_two {
-    background-color: #0C0C0E;
-}
-
-.button_three {
-    background-color: #0C0C0E;
+    cursor: auto;
 }
 
 .Favorites {
