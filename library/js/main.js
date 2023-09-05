@@ -59,3 +59,33 @@ prepre.forEach((dot, index) => {
 })
 
 
+const ArOne = document.querySelector('.arrow_one');
+const ArTwo = document.querySelector('.arrow_two');
+
+ArTwo.addEventListener('click', () => {
+    if (position < (prepre.length - 1 )* 475) {
+        position += 475 
+        dotindex++;
+    }
+    else {
+        position = (prepre.length - 1) * 475; 
+        dotindex = prepre.length - 1;
+    }
+     
+    wraperlel.style.left = -position + 'px'
+   
+    dota(dotindex)
+})
+ArOne.addEventListener('click', () => {
+    if (position > 0) {
+        position -= 475;
+        dotindex--;
+      } else {
+        position = 0
+        dotindex = 0
+      }
+    
+      wraperlel.style.left = -position + 'px'
+    
+        dota(dotindex)
+})
