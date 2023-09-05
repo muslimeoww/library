@@ -31,6 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
 const wraperlel = document.querySelector('.wraper_lele');
 const butonslide = document.querySelectorAll('.suck');
 const prepre = document.querySelectorAll('.pre');
+const prepr = document.querySelectorAll('.pre');
+
 
 let position = 0;
 let dotindex = 0;
@@ -50,6 +52,14 @@ butonslide[index].classList.add('button_one')
 prepre.forEach((dot, index) => {
     dot.addEventListener('click', () => {
         position = 475 * (index - 1);
+        wraperlel.style.left= -position + 'px'
+        dotindex = index;
+        dota(dotindex)
+    })
+})
+prepr.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        position = 475 * (index );
         wraperlel.style.left= -position + 'px'
         dotindex = index;
         dota(dotindex)
