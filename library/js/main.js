@@ -89,3 +89,18 @@ ArOne.addEventListener('click', () => {
     
         dota(dotindex)
 })
+
+// слайдер в блоке фаворитес 
+
+let block = document.querySelector('.books_for_my_life');
+let clickBut = document.querySelectorAll('.label_season')[0];
+
+clickBut.addEventListener('Click', () => {
+    if (block.classList.contains('books_for_my_life')) {
+        block.classList.add('fuckingslaw')
+        block.classList.remove('green')
+    } else {
+        block.classList.add('green')
+        block.classList.remove('fuckingslaw')
+    }
+})

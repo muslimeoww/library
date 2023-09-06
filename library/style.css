@@ -408,12 +408,25 @@ ul {
     height: 17px;
 }
 
+
+/* книги нач  */
 .books_for_my_life {
     display: flex;
     align-content: space-between;
     margin-top: 40px;
     flex-wrap: wrap;
 
+}
+
+.display-noneee {
+display: none;
+}
+
+.green {
+    display: none;
+}
+.fuckingslaw {
+ display: flex;
 }
 
 .Staffs_books {
@@ -1225,9 +1238,7 @@ h3 {
     cursor: pointer;
 }
 
-.display-noneee {
-    display: none;
-}
+
 
 .lww_li:hover {
     filter: drop-shadow(0px 0px 10px #ee900c);
