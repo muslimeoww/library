@@ -1640,7 +1640,6 @@ text-decoration-line: underline;
 }
 /* Блок мой профиль большой */
 .block-my-profile{
-    
     display: flex;
     position: absolute;
     margin: auto;
@@ -1651,8 +1650,8 @@ text-decoration-line: underline;
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 5;
-    display: none;
+    z-index: 150;
+    
 }
 .left-profile {
 width: 170px;
@@ -1825,7 +1824,7 @@ line-height: 20px; /* 100% */
 }
 /* стартую Buy a library card */
 .buy-a-lib {
-    display: none;
+    
     position: absolute;
     width: 650px;
     height: 540px;
@@ -1835,6 +1834,7 @@ line-height: 20px; /* 100% */
     bottom: 0;
     right: 0;
     margin: auto;
+    z-index: 150;
 }
 .buy-men-top {
     display: flex;

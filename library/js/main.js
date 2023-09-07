@@ -1,3 +1,34 @@
+const loginstate = () => {
+
+    let dropdowns = document.getElementsByClassName("card-con");
+    for (let dropdown of dropdowns) {
+        dropdown.classList.toggle('hidensik')
+        
+        
+    }
+    const fucking = JSON.parse(window.localStorage.getItem("userflexa"))
+    const profises = document.querySelector('#profise')
+    profises.innerHTML = fucking.key
+    
+    const fefs = document.querySelector('.bikecru')
+    fefs.innerHTML = fucking.fname.charAt(0).toUpperCase() + fucking.lname.charAt(0).toUpperCase()
+    
+    const buys = document.querySelectorAll('.buy')
+    
+    for (let buy of buys) {
+        buy.addEventListener('click', (event)=> {
+        document.querySelector('#buybobe').classList.toggle('modals_sexi')
+        event.stopPropagation();
+    })
+        }
+
+        document.querySelector('.profile_menu_button_one_two').addEventListener('click', (event)=> {
+            document.querySelector('#myunderskin').classList.toggle('modals_sexi')
+            event.stopPropagation();
+        })
+    } 
+   
+    
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("burger").addEventListener("click", function () {
         document.querySelector(".header").classList.toggle("open")
@@ -193,6 +224,18 @@ cnopkareg.addEventListener('click', (event)=> {
     event.stopPropagation();
 })
 
+document.querySelector('.down-login-butt').addEventListener('click', (event)=> {
+    loginModal.classList.toggle('modals_sexi')
+    registerModal.classList.toggle('modals_sexi')
+
+    event.stopPropagation();
+})
+document.querySelector('.down-login-butt-two').addEventListener('click', (event)=> {
+    loginModal.classList.toggle('modals_sexi')
+    registerModal.classList.toggle('modals_sexi')
+
+    event.stopPropagation();
+})
 
 const registerform = document.querySelector('.login-header-form-gurd-two ');
 
@@ -219,7 +262,7 @@ const registerform = document.querySelector('.login-header-form-gurd-two ');
       }
       
       window.localStorage.setItem("userflexa", JSON.stringify(userflexa));
-     
+      loginstate()
       
     registerform.closest('.modalka_one').classList.toggle('modals_sexi')
     
@@ -249,21 +292,4 @@ const loginformic = document.querySelector('.login-header-form-gurd');
     
 
 
-const loginstate = () => {
-
-let dropdowns = document.getElementsByClassName("card-con");
-for (let dropdown of dropdowns) {
-    dropdown.classList.toggle('hidensik')
-    
-    
-}
-const fucking = JSON.parse(window.localStorage.getItem("userflexa"))
-const profises = document.querySelector('#profise')
-profises.innerHTML = fucking.key
-
-const fefs = document.querySelector('.bikecru')
-fefs.innerHTML = fucking.fname.charAt(0).toUpperCase() + fucking.lname.charAt(0).toUpperCase()
-
-
-} 
 
