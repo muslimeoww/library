@@ -137,11 +137,65 @@ clickBut[0].addEventListener('click',() => {
     
 }
 )
-
+// Менюшка беленькая с логином и регистером
 const ilovecats = document.querySelector('.user');
 const ilovedogs = document.querySelector('.profile_menu');
 
 
-ilovecats.addEventListener('click', () => {
+ilovecats.addEventListener('click', (event) => {
     ilovedogs.classList.toggle('poyvla')
+    event.stopPropagation();
 })
+  
+window.onclick = function(event) { 
+    if (!event.target.matches('.profile_menu')) {
+        let dropdowns = document.getElementsByClassName("profile_menu");
+        for (let dropdown of dropdowns) {
+            if (!dropdown.classList.contains('poyvla')) {
+                dropdown.classList.add('poyvla');
+            }
+        }
+    }
+}
+// loginbuttons-and-menu
+const ilovecatss = document.querySelector('.profile_menu_button_one');
+const ilovedogss = document.querySelector('.login-header-form-gurd');
+
+
+ilovecatss.addEventListener('click', (event) => {
+    ilovedogss.classList.toggle('fuckinglele')
+    event.stopPropagation();
+})
+  
+window.onclick = function(event) { 
+    if (!event.target.matches('.login-header-form-gurd')) {
+        let dropdowns = document.getElementsByClassName("login-header-form-gurd");
+        for (let dropdown of dropdowns) {
+            if (!dropdown.classList.contains('fuckinglele')) {
+                dropdown.classList.add('fuckinglele');
+            }
+        }
+    }
+}
+
+// REGISTRbuttons-and-menu
+const ilovecatsss = document.querySelector('.profile_menu_button_two');
+const ilovedogsss = document.querySelector('.login-header-form-gurd-two');
+
+
+ilovecatsss.addEventListener('click', (event) => {
+    ilovedogsss.classList.toggle('pussinboots')
+    event.stopPropagation();
+})
+  
+window.onclick = function(event) { 
+    if (!event.target.matches('.login-header-form-gurd-two')) {
+        let dropdowns = document.getElementsByClassName("login-header-form-gurd-two");
+        for (let dropdown of dropdowns) {
+            if (!dropdown.classList.contains('pussinboots')) {
+                dropdown.classList.add('pussinboots');
+            }
+        }
+    }
+}
+

@@ -1296,7 +1296,6 @@ h3 {
 
 
 
-
 .profile_menu_header {
     color: #000;
     font-family: 'Inter';
@@ -1396,7 +1395,7 @@ h3 {
 
 /* Формочка Логин */
 .login-header-form-gurd {
-    display: none;
+    
     background-color: #FFF;
     width: 250px;
     height: 262px;
@@ -1409,6 +1408,11 @@ h3 {
     z-index: 5;
     padding: 20px 25px;
 }
+
+.fuckinglele {
+    visibility: hidden; 
+}
+
 .login-heder {
 color: #000;
 text-align: center;
@@ -1494,7 +1498,7 @@ text-decoration-line: underline;
 }
 /* вторая формочка  */
 .login-header-form-gurd-two {
-    display: none;
+    
     background-color: #FFF;
     width: 250px;
     height: 382px;
@@ -1507,6 +1511,10 @@ text-decoration-line: underline;
     z-index: 5;
     padding: 20px 25px;
 }
+.pussinboots {
+    visibility: hidden; 
+}
+
 .login-heder-two {
 color: #000;
 text-align: center;
