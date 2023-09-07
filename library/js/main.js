@@ -1,18 +1,41 @@
+const setName = (selector) => {
+    const fucking = JSON.parse(window.localStorage.getItem("userflexa"))
+    selector.innerHTML = fucking.fname.charAt(0).toUpperCase() + fucking.lname.charAt(0).toUpperCase()
+};
+const fuckingNAME = (selector) => {
+    const fucking = JSON.parse(window.localStorage.getItem("userflexa"))
+    selector.innerHTML = fucking.fname.charAt(0).toUpperCase() + fucking.fname.slice(1) +' '+ fucking.lname.charAt(0).toUpperCase() + fucking.lname.slice(1)
+};
+const cardnumber = (selector) => {
+    const fucking = JSON.parse(window.localStorage.getItem("userflexa"))
+    selector.innerHTML = fucking.key
+};
 const loginstate = () => {
-
+    const fucking = JSON.parse(window.localStorage.getItem("userflexa"))
+    fucking.visit += 1;
+    document.querySelector('.text-one-pr').innerHTML = fucking.visit
+    window.localStorage.setItem("userflexa", JSON.stringify(fucking));
+    
     let dropdowns = document.getElementsByClassName("card-con");
     for (let dropdown of dropdowns) {
         dropdown.classList.toggle('hidensik')
         
         
     }
-    const fucking = JSON.parse(window.localStorage.getItem("userflexa"))
+
+    
     const profises = document.querySelector('#profise')
-    profises.innerHTML = fucking.key
+    cardnumber(profises)
     
     const fefs = document.querySelector('.bikecru')
-    fefs.innerHTML = fucking.fname.charAt(0).toUpperCase() + fucking.lname.charAt(0).toUpperCase()
+    setName(fefs)
+    setName(document.querySelector('.text-tame-js'))
+    fuckingNAME(document.querySelector('.enezetiale'))
+    cardnumber(document.querySelector('.card-number-newss'))
     
+
+
+
     const buys = document.querySelectorAll('.buy')
     
     for (let buy of buys) {
@@ -259,6 +282,7 @@ const registerform = document.querySelector('.login-header-form-gurd-two ');
         mail : maill,
         password : passwordl,
         key: genRanHex(9),
+        visit: 0,
       }
       
       window.localStorage.setItem("userflexa", JSON.stringify(userflexa));
