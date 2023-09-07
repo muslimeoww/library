@@ -157,45 +157,38 @@ window.onclick = function(event) {
         }
     }
 }
-// loginbuttons-and-menu
-const ilovecatss = document.querySelector('.profile_menu_button_one');
-const ilovedogss = document.querySelector('.login-header-form-gurd');
 
 
-ilovecatss.addEventListener('click', (event) => {
-    ilovedogss.classList.toggle('fuckinglele')
+const loginModal = document.querySelector('#login_form');
+const registerModal = document.querySelector('#register_form');
+const loginbutton = document.querySelector('.profile_menu_button_one')
+const xrestix = document.querySelectorAll('.closebel')
+const backgrand = document.querySelectorAll('.backgraundmodal')
+const cnopkareg = document.querySelector('.profile_menu_button_two')
+
+for (let xresti of xrestix) {
+    xresti.addEventListener('click', (event)=> {
+    xresti.closest('.modalka_one').classList.toggle('modals_sexi')
     event.stopPropagation();
 })
-  
-window.onclick = function(event) { 
-    if (!event.target.matches('.login-header-form-gurd')) {
-        let dropdowns = document.getElementsByClassName("login-header-form-gurd");
-        for (let dropdown of dropdowns) {
-            if (!dropdown.classList.contains('fuckinglele')) {
-                dropdown.classList.add('fuckinglele');
-            }
-        }
     }
-}
 
-// REGISTRbuttons-and-menu
-const ilovecatsss = document.querySelector('.profile_menu_button_two');
-const ilovedogsss = document.querySelector('.login-header-form-gurd-two');
-
-
-ilovecatsss.addEventListener('click', (event) => {
-    ilovedogsss.classList.toggle('pussinboots')
+loginbutton.addEventListener('click', (event)=> {
+    ilovedogs.classList.toggle('poyvla')
+    loginModal.classList.toggle('modals_sexi')
     event.stopPropagation();
 })
-  
-window.onclick = function(event) { 
-    if (!event.target.matches('.login-header-form-gurd-two')) {
-        let dropdowns = document.getElementsByClassName("login-header-form-gurd-two");
-        for (let dropdown of dropdowns) {
-            if (!dropdown.classList.contains('pussinboots')) {
-                dropdown.classList.add('pussinboots');
-            }
-        }
-    }
+
+for (let backgrands of backgrand) {
+    backgrands.addEventListener('click', (event)=> {
+        backgrands.parentElement.classList.toggle('modals_sexi')
+        event.stopPropagation();
+    })
 }
+    
+    cnopkareg.addEventListener('click', (event)=> {
+        ilovedogs.classList.toggle('poyvla')
+        registerModal.classList.toggle('modals_sexi')
+        event.stopPropagation();
+    })
 

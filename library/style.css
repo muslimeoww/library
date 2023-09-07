@@ -1405,13 +1405,44 @@ h3 {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    z-index: 5;
+    z-index: 100;
     padding: 20px 25px;
+    
+}
+/* Модалки  */
+.modalka_one {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    visibility: hidden;
 }
 
-.fuckinglele {
-    visibility: hidden; 
+.backgraundmodal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
+.modals_sexi {
+    visibility: visible;
+}
+
+
 
 .login-heder {
 color: #000;
@@ -1508,12 +1539,11 @@ text-decoration-line: underline;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    z-index: 5;
+    z-index: 110;
     padding: 20px 25px;
+    
 }
-.pussinboots {
-    visibility: hidden; 
-}
+
 
 .login-heder-two {
 color: #000;
