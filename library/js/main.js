@@ -166,6 +166,7 @@ const xrestix = document.querySelectorAll('.closebel')
 const backgrand = document.querySelectorAll('.backgraundmodal')
 const cnopkareg = document.querySelector('.profile_menu_button_two')
 
+
 for (let xresti of xrestix) {
     xresti.addEventListener('click', (event)=> {
     xresti.closest('.modalka_one').classList.toggle('modals_sexi')
@@ -186,9 +187,22 @@ for (let backgrands of backgrand) {
     })
 }
     
-    cnopkareg.addEventListener('click', (event)=> {
-        ilovedogs.classList.toggle('poyvla')
-        registerModal.classList.toggle('modals_sexi')
-        event.stopPropagation();
-    })
+cnopkareg.addEventListener('click', (event)=> {
+    ilovedogs.classList.toggle('poyvla')
+    registerModal.classList.toggle('modals_sexi')
+    event.stopPropagation();
+})
 
+
+const registerform = document.querySelector('.login-header-form-gurd-two ');
+
+    registerform.addEventListener('submit', (event)=> {
+    event.preventDefault();
+    const nameinput = event.target.querySelector("#Fname");
+    const name = nameinput.value;
+    console.log(name);
+    // registerform.closest('.modalka_one').classList.toggle('modals_sexi')
+    
+})
+    
+    
