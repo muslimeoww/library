@@ -200,9 +200,49 @@ const registerform = document.querySelector('.login-header-form-gurd-two ');
     event.preventDefault();
     const nameinput = event.target.querySelector("#Fname");
     const name = nameinput.value;
-    console.log(name);
-    // registerform.closest('.modalka_one').classList.toggle('modals_sexi')
+    
+    const lname = event.target.querySelector("#Lname");
+    const llname = lname.value;
+
+    const mail = event.target.querySelector("#mail");
+    const maill = mail.value;
+
+    const password = event.target.querySelector("#password");
+    const passwordl = password.value;
+
+    const userflexa = {
+        fname : name,
+        lname : llname,
+        mail : maill,
+        password : passwordl,
+      }
+      
+      window.localStorage.setItem("userflexa", JSON.stringify(userflexa));
+      const sese = window.localStorage.getItem("userflexa")
+      
+    registerform.closest('.modalka_one').classList.toggle('modals_sexi')
     
 })
+
+
+const loginformic = document.querySelector('.login-header-form-gurd');
+
+    loginformic.addEventListener('submit', (event)=>{
+    event.preventDefault(); 
+    const maillog = event.target.querySelector("#email");
+    const maillogis = maillog.value;
+
+    const holpas = event.target.querySelector("#hollypas");
+    const holypas = holpas.value;
     
+      const fucking = window.localStorage.getItem("userflexa")
+      if (fucking.mail === maillogis && 
+        fucking.password === holypas) {
+            
+      } 
+      
+      
+    })
     
+
+
