@@ -139,7 +139,7 @@ clickBut[0].addEventListener('click',() => {
 )
 // Менюшка беленькая с логином и регистером
 const ilovecats = document.querySelector('.user');
-const ilovedogs = document.querySelector('.profile_menu');
+const ilovedogs = document.querySelector('.lelememe');
 
 
 ilovecats.addEventListener('click', (event) => {
@@ -148,8 +148,8 @@ ilovecats.addEventListener('click', (event) => {
 })
   
 window.onclick = function(event) { 
-    if (!event.target.matches('.profile_menu')) {
-        let dropdowns = document.getElementsByClassName("profile_menu");
+    if (!event.target.matches('.lelememe')) {
+        let dropdowns = document.getElementsByClassName("lelememe");
         for (let dropdown of dropdowns) {
             if (!dropdown.classList.contains('poyvla')) {
                 dropdown.classList.add('poyvla');
@@ -209,16 +209,17 @@ const registerform = document.querySelector('.login-header-form-gurd-two ');
 
     const password = event.target.querySelector("#password");
     const passwordl = password.value;
-
+    const genRanHex = size => [...Array(size)].map(() => Math.floor(Math.random() * 16).toString(16)).join('').toUpperCase();
     const userflexa = {
         fname : name,
         lname : llname,
         mail : maill,
         password : passwordl,
+        key: genRanHex(9),
       }
       
       window.localStorage.setItem("userflexa", JSON.stringify(userflexa));
-      const sese = window.localStorage.getItem("userflexa")
+     
       
     registerform.closest('.modalka_one').classList.toggle('modals_sexi')
     
@@ -235,14 +236,34 @@ const loginformic = document.querySelector('.login-header-form-gurd');
     const holpas = event.target.querySelector("#hollypas");
     const holypas = holpas.value;
     
-      const fucking = window.localStorage.getItem("userflexa")
+      const fucking = JSON.parse(window.localStorage.getItem("userflexa"))
       if (fucking.mail === maillogis && 
-        fucking.password === holypas) {
+        fucking.password === holypas)  {
             
+            loginformic.closest('.modalka_one').classList.toggle('modals_sexi')
+            loginstate()
       } 
       
       
     })
     
 
+
+const loginstate = () => {
+
+let dropdowns = document.getElementsByClassName("card-con");
+for (let dropdown of dropdowns) {
+    dropdown.classList.toggle('hidensik')
+    
+    
+}
+const fucking = JSON.parse(window.localStorage.getItem("userflexa"))
+const profises = document.querySelector('#profise')
+profises.innerHTML = fucking.key
+
+const fefs = document.querySelector('.bikecru')
+fefs.innerHTML = fucking.fname.charAt(0).toUpperCase() + fucking.lname.charAt(0).toUpperCase()
+
+
+} 
 
