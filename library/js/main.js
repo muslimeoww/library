@@ -34,8 +34,6 @@ const loginstate = () => {
     cardnumber(document.querySelector('.card-number-newss'))
     
 
-
-
     const buys = document.querySelectorAll('.buy')
     
     for (let buy of buys) {
