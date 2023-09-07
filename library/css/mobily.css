@@ -205,6 +205,16 @@
 
 
     /* Favorite */
+    .form_buttons {
+        position: sticky;
+        top: 0px;
+        background: rgba(214, 159, 55, 0.6);
+        z-index: 20;
+        
+    }
+    .Favorites {
+        margin-bottom: 2377px;
+    }
 
     .fav::before {
         content: '';
@@ -487,5 +497,14 @@
 @media only screen and (max-width: 1218px) and (min-width: 1025px) {
     .maps {
         width: 500px;
+    }
+}
+@media only screen and (max-width: 1249px) and (min-width: 1025px) {
+    .h_1 {
+        margin-right: 10px;
+        
+    }
+    .Favorites {
+        margin-bottom: 2377px;
     }
 }

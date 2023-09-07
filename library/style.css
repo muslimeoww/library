@@ -328,6 +328,7 @@ ul {
 
 .Favorites {
     margin-top: 53px;
+    margin-bottom: 1188px;
 }
 
 .fav {
@@ -409,25 +410,26 @@ ul {
 }
 
 
-/* книги нач  */
+
+/* книги нач ебаная */
 .books_for_my_life {
     display: flex;
+    position: absolute;
     align-content: space-between;
     margin-top: 40px;
     flex-wrap: wrap;
-
+    opacity: 1;
+    transition: 4s;
 }
+
+
 
 .display-noneee {
-display: none;
+   opacity: 0;
+   transition: 2s;
 }
 
-.green {
-    display: none;
-}
-.fuckingslaw {
- display: flex;
-}
+
 
 .Staffs_books {
     position: relative;
@@ -1271,8 +1273,10 @@ h3 {
 }
 
 /* Хедер-кнопка-меню */
-.profile_menu {
 
+
+.profile_menu {
+    
     right: 20px;
     top: 90px;
     position: absolute;
@@ -1283,9 +1287,16 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: none;
     
+
 }
+.poyvla {
+    visibility: hidden;
+}
+
+
+
+
 .profile_menu_header {
     color: #000;
     font-family: 'Inter';

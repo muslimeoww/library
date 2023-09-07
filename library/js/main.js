@@ -60,6 +60,7 @@ prepre.forEach((dot, index) => {
 
 
 const ArOne = document.querySelector('.arrow_one');
+
 const ArTwo = document.querySelector('.arrow_two');
 
 ArTwo.addEventListener('click', () => {
@@ -92,15 +93,55 @@ ArOne.addEventListener('click', () => {
 
 // слайдер в блоке фаворитес 
 
-let block = document.querySelector('.books_for_my_life');
-let clickBut = document.querySelectorAll('.label_season')[0];
+const block = document.querySelectorAll('.books_for_my_life');
+const clickBut = document.querySelectorAll('.label_season');
 
-clickBut.addEventListener('Click', () => {
-    if (block.classList.contains('books_for_my_life')) {
-        block.classList.add('fuckingslaw')
-        block.classList.remove('green')
-    } else {
-        block.classList.add('green')
-        block.classList.remove('fuckingslaw')
+
+clickBut[1].addEventListener('click',() => {
+    for (let item of block){
+    item.classList.add('display-noneee');
     }
+    
+        block[1].classList.remove('display-noneee')
+        
+    
+}
+)
+clickBut[2].addEventListener('click',() => {
+    for (let item of block){
+    item.classList.add('display-noneee');
+    }
+    
+        block[2].classList.remove('display-noneee')
+        
+    
+}
+)
+clickBut[3].addEventListener('click',() => {
+    for (let item of block){
+    item.classList.add('display-noneee');
+    }
+    
+        block[3].classList.remove('display-noneee')
+        
+    
+}
+)
+clickBut[0].addEventListener('click',() => {
+    for (let item of block){
+    item.classList.add('display-noneee');
+    }
+    
+        block[0].classList.remove('display-noneee')
+        
+    
+}
+)
+
+const ilovecats = document.querySelector('.user');
+const ilovedogs = document.querySelector('.profile_menu');
+
+
+ilovecats.addEventListener('click', () => {
+    ilovedogs.classList.toggle('poyvla')
 })
