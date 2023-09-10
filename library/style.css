@@ -1370,7 +1370,15 @@ h3 {
     line-height: 20px;
     margin-top: 5px;
     margin-bottom: 20px;
+
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 133.333% */
 }
+
 .profile_menu_header_two::before {
     content: '';
     position: absolute;

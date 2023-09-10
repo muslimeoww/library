@@ -10,12 +10,33 @@ const cardnumber = (selector) => {
     const fucking = JSON.parse(window.localStorage.getItem("userflexa"))
     selector.innerHTML = fucking.key
 };
+
+
+// placegolder
+// const cardname = (selector) => {
+//     const fucking = JSON.parse(window.localStorage.getItem("userflexa"))
+//     selector.innerHTML = fucking.fname
+// };
+
+// const cardplacehol = (selector) => {
+//     const fucking = JSON.parse(window.localStorage.getItem("userflexa"))
+//     selector.innerHTML = fucking.lname
+// };
+
+// let input = document.querySelector('.name_form')
+// input.setAttribute('fnames', cardname)
+
+
+
 const loginstate = () => {
     const fucking = JSON.parse(window.localStorage.getItem("userflexa"))
     fucking.visit += 1;
     document.querySelector('.text-one-pr').innerHTML = fucking.visit
     window.localStorage.setItem("userflexa", JSON.stringify(fucking));
     
+    document.querySelector('.text-one-pr-pr').innerHTML = fucking.visit
+    window.localStorage.setItem("userflexa", JSON.stringify(fucking));
+
     let dropdowns = document.getElementsByClassName("card-con");
     for (let dropdown of dropdowns) {
         dropdown.classList.toggle('hidensik')
@@ -23,6 +44,7 @@ const loginstate = () => {
         
     }
 
+    
     
     const profises = document.querySelector('#profise')
     cardnumber(profises)
@@ -32,6 +54,8 @@ const loginstate = () => {
     setName(document.querySelector('.text-tame-js'))
     fuckingNAME(document.querySelector('.enezetiale'))
     cardnumber(document.querySelector('.card-number-newss'))
+    // плейсхолдера
+    
     
 
     const buys = document.querySelectorAll('.buy')
@@ -44,6 +68,10 @@ const loginstate = () => {
         }
 
         document.querySelector('.profile_menu_button_one_two').addEventListener('click', (event)=> {
+            document.querySelector('#myunderskin').classList.toggle('modals_sexi')
+            event.stopPropagation();
+        })
+        document.querySelector('.login_guge').addEventListener('click', (event)=> {
             document.querySelector('#myunderskin').classList.toggle('modals_sexi')
             event.stopPropagation();
         })
@@ -214,10 +242,17 @@ window.onclick = function(event) {
 const loginModal = document.querySelector('#login_form');
 const registerModal = document.querySelector('#register_form');
 const loginbutton = document.querySelector('.profile_menu_button_one')
+const loginbuttons = document.querySelector('.login')
 const xrestix = document.querySelectorAll('.closebel')
 const backgrand = document.querySelectorAll('.backgraundmodal')
 const cnopkareg = document.querySelector('.profile_menu_button_two')
+const cnopkaregg = document.querySelector('.singup')
 
+const logout = document.querySelector('.profile_menu_button_two_two')
+
+logout.addEventListener('click', ()=> {
+    location.reload()
+})
 
 for (let xresti of xrestix) {
     xresti.addEventListener('click', (event)=> {
@@ -225,7 +260,11 @@ for (let xresti of xrestix) {
     event.stopPropagation();
 })
     }
-
+    loginbuttons.addEventListener('click', (event)=> {
+        ilovedogs.classList.toggle('poyvla')
+        loginModal.classList.toggle('modals_sexi')
+        event.stopPropagation();
+    })
 loginbutton.addEventListener('click', (event)=> {
     ilovedogs.classList.toggle('poyvla')
     loginModal.classList.toggle('modals_sexi')
@@ -238,7 +277,12 @@ for (let backgrands of backgrand) {
         event.stopPropagation();
     })
 }
-    
+cnopkaregg.addEventListener('click', (event)=> {
+    ilovedogs.classList.toggle('poyvla')
+    registerModal.classList.toggle('modals_sexi')
+    event.stopPropagation();
+})
+
 cnopkareg.addEventListener('click', (event)=> {
     ilovedogs.classList.toggle('poyvla')
     registerModal.classList.toggle('modals_sexi')
