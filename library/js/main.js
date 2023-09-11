@@ -238,7 +238,7 @@ window.onclick = function(event) {
     }
 }
 
-
+ 
 const loginModal = document.querySelector('#login_form');
 const registerModal = document.querySelector('#register_form');
 const loginbutton = document.querySelector('.profile_menu_button_one')
@@ -270,6 +270,8 @@ loginbutton.addEventListener('click', (event)=> {
     loginModal.classList.toggle('modals_sexi')
     event.stopPropagation();
 })
+
+
 
 for (let backgrands of backgrand) {
     backgrands.addEventListener('click', (event)=> {
